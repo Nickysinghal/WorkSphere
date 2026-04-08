@@ -75,7 +75,7 @@ taskhive/
 ## ⚙️ How to Run the Project
 
 ```bash
-git clone https://github.com/your-username/taskflow-dashboard.git
-cd taskflow-dashboard
+git clone https://github.com/Nickysinghal/WorkSphere.git
+cd emp
 npm install
-npm start
+npm run dev
