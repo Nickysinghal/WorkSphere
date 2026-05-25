@@ -50,22 +50,47 @@ A full-stack style React application that allows admins to manage employees and 
 ## 📂 Project Structure
 
 ```
-taskhive/
+src/
 │
-├── public/
-│   └── index.html
+├── assets/                 # Static files (images, icons, etc.)
 │
-├── src/
-│   ├── assets/          # Images, icons, etc.
-│   ├── components/      # Reusable UI components
-│   ├── pages/           # Admin & Employee pages
-│   ├── context/         # Context API (Auth, Tasks)
-│   ├── utils/           # Helper functions / data
-│   ├── App.js           # Main app component
-│   └── index.js         # Entry point
+├── components/            # Reusable UI components
+│   │
+│   ├── Auth/
+│   │   └── Login.jsx              # Login form for users (Admin/Employee)
+│   │
+│   ├── Dashboard/
+│   │   ├── AdminDashboard.jsx     # Admin panel (create/manage tasks)
+│   │   └── EmployeeDashboard.jsx  # Employee panel (view & update tasks)
+│   │
+│   ├── other/
+│   │   ├── AllTask.jsx            # Displays all tasks (main list view)
+│   │   ├── CreateTask.jsx         # Form to create new tasks (Admin)
+│   │   ├── Header.jsx             # Navbar / top section UI
+│   │   └── TaskListNumber.jsx     # Shows task counts (stats)
+│   │
+│   ├── TaskList/
+│   │   ├── AcceptTask.jsx         # Tasks accepted by employee
+│   │   ├── Completedtask.jsx      # Completed tasks UI
+│   │   ├── FailedTask.jsx         # Failed tasks UI
+│   │   ├── NewTask.jsx            # Newly assigned tasks
+│   │   └── TaskList.jsx           # Combines all task categories
 │
-├── package.json
-└── README.md
+├── context/
+│   └── AuthProvider.jsx   # Global authentication & user state using Context API
+│
+├── pages/                # (Optional routing-level components)
+│
+├── utils/
+│   └── localStorage.jsx  # Functions to store/retrieve data from localStorage
+│
+├── App.css               # Global styling
+├── App.jsx               # Main app logic (routing + role handling)
+├── main.jsx              # Entry point (React DOM rendering)
+│
+├── .gitignore            # Git ignored files
+├── .prettierrc           # Code formatting rules
+├── eslint.config.js      # Linting configuration
 ```
 
 
