@@ -52,7 +52,7 @@ const employees = [
             "active": 1,
             "newTask": 0,
             "completed": 1,
-            "failed": 0
+            "failed": 1
         },
         "tasks": [
             {
@@ -130,7 +130,7 @@ const employees = [
             "active": 2,
             "newTask": 1,
             "completed": 0,
-            "failed": 0
+            "failed": 1
         },
         "tasks": [
             {
