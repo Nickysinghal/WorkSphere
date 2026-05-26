@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
 
     return (
         <div>
-            <AuthContext.Provider value={userData}>
+            <AuthContext.Provider value={{...userData, updateEmployees}}>
                 {children}
 
             </AuthContext.Provider>
