@@ -6,15 +6,18 @@ export const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
 
     const [userData, setUserData] = useState(null)
-    
+
+    const updateEmployees = (updatedEmployees) => {
+        setUserData(prev => ({ ...prev, employees: updatedEmployees }))
+    }
     //runs in side stack
-    useEffect(()=>{
+    useEffect(() => {
         if (!localStorage.getItem("Employees")) {
-        setLocalStorage()
+            setLocalStorage()
         }
-        const {employees,admin} = getLocalStorage();
-        setUserData({employees,admin})
-    },[])
+        const { employees, admin } = getLocalStorage();
+        setUserData({ employees, admin })
+    }, [])
 
     return (
         <div>
@@ -22,7 +25,7 @@ const AuthProvider = ({ children }) => {
                 {children}
 
             </AuthContext.Provider>
-            
+
         </div>
     )
 }

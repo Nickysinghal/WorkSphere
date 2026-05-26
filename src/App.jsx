@@ -7,11 +7,6 @@ import { AuthContext } from './context/AuthProvider'
 
 const App = () => {
 
-  // useEffect(() => {
-
-  //   setLocalStorage()
-  // }, [])
-
   const [user, setUser] = useState(null) //emp or admin
   const [LoggedInUserData, setLoggedInUserData] = useState(null)
 

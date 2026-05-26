@@ -1,18 +1,23 @@
 import React from 'react'
 
-const Completetask = ({data}) => {
+const Completetask = ({ data }) => {
     return (
-        <div className="h-full w-75 shrink-0 rounded-xl bg-blue-400 p-5 text-amber-50">
-            <div className="flex items-center justify-between">
-                <h3 className="rounded bg-red-500 px-3 py-1 text-sm">{data.category}</h3>
-                <h4 className="text-sm">{data.taskDate}</h4>
+        <div className="h-full w-72 shrink-0 rounded-2xl bg-blue-400/10 border border-blue-400/40 p-5 text-white flex flex-col justify-between backdrop-blur-sm">
+            <div>
+                <div className="flex items-center justify-between mb-4">
+                    <span className="rounded-full bg-blue-400/20 border border-blue-400/50 px-3 py-1 text-xs font-medium text-blue-300 uppercase tracking-wider">
+                        {data.category}
+                    </span>
+                    <span className="text-xs text-blue-400/70">{data.taskDate}</span>
+                </div>
+                <div className="mb-2">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-blue-400">&#10004; Completed</span>
+                </div>
+                <h2 className="text-lg font-bold text-white mb-2 leading-snug">{data.taskTitle}</h2>
+                <p className="text-sm text-gray-400 leading-relaxed">{data.taskDescription}</p>
             </div>
-            <h2 className="mt-5 text-2xl font-semibold">{data.taskTitle}</h2>
-            <p className="mt-2 text-sm">
-               {data.taskDescription}
-            </p>
-            <div className="bg-green-300 mt-2">
-                <button className='w-full'>Complete</button>
+            <div className="mt-5 w-full rounded-xl bg-blue-400/20 border border-blue-400/40 text-blue-300 text-sm font-semibold py-2 text-center">
+                Completed &#10004;
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../../context/AuthProvider'
 
 const CreateTask = () => {
 
@@ -7,9 +8,8 @@ const CreateTask = () => {
   const [taskDate, setTaskDate] = useState("")
   const [category, setTaskCategory] = useState("")
   const [taskAssign, setTaskAssign] = useState("")
-
   
-
+  const { updateEmployees } = useContext(AuthContext)
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log("task createddd")
@@ -37,7 +37,7 @@ const CreateTask = () => {
        console.log(elem)
       }
     })
-
+    updateEmployees(data)
     localStorage.setItem("Employees", JSON.stringify(data));
 
     setTaskTitle("");
@@ -48,7 +48,7 @@ const CreateTask = () => {
   }
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white/5 rounded-lg shadow-md">
+    <div className="max-w-xl mx-auto p-6max-w-xl mx-auto p-6 bg-black rounded-lg border-2 border-white shadow-md bg-white/5 rounded-lg shadow-md">
       <form
         onSubmit={(e) => {
           submitHandler(e)

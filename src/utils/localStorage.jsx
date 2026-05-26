@@ -100,10 +100,10 @@ const employees = [
                 "category": "Presentation"
             },
             {
-                "active": true,
+                "active": false,
                 "newTask": false,
                 "completed": false,
-                "failed": false,
+                "failed": true,
                 "taskTitle": "Code review",
                 "taskDescription": "Review the codebase for optimization",
                 "taskDate": "2024-10-12",

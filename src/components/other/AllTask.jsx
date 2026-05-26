@@ -8,7 +8,7 @@ const AllTask = () => {
 
   return (
     <div className='h-80 bg-black rounded p-2'>
-      <div className='bg-red-400 flex justify-between p-3 rounded mt-2 mb-3'>
+      <div className='bg-blue-400/50 flex justify-between p-3 rounded mt-2 mb-3 text-white'>
           <h2 className='text-lg font-meduim w-1/5'>Employee Name</h2>
           <h3 className='text-lg font-meduim w-1/5'>Active task</h3>
           <h3 className='text-lg font-meduim w-1/5'>New Task</h3>
