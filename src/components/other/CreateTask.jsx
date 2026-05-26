@@ -48,7 +48,7 @@ const CreateTask = () => {
   }
 
   return (
-    <div className="max-w-xl mx-auto p-6max-w-xl mx-auto p-6 bg-black rounded-lg border-2 border-white shadow-md bg-white/5 rounded-lg shadow-md">
+    <div className="max-w-xl mx-auto p-6 bg-black rounded-lg border-2 border-white shadow-md">
       <form
         onSubmit={(e) => {
           submitHandler(e)
