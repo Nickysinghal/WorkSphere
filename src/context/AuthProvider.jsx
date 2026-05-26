@@ -9,7 +9,9 @@ const AuthProvider = ({ children }) => {
     
     //runs in side stack
     useEffect(()=>{
+        if (!localStorage.getItem("Employees")) {
         setLocalStorage()
+        }
         const {employees,admin} = getLocalStorage();
         setUserData({employees,admin})
     },[])
