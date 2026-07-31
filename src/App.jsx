@@ -32,7 +32,7 @@ const App = () => {
 
 
   const handleLogin = (email, password) => {
-    if (email == "admin@me.com" && password == '123') {
+    if (email == "admin@me.com" && password == 'Admin@123') {
       // console.log("admin")
       const admin = authData.admin.find((a) => email == a.email && password == a.password);
       console.log("admin data derived", admin);

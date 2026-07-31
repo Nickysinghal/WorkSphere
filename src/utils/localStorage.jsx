@@ -3,7 +3,7 @@ const employees = [
         "id": 1,
         "firstName": "Arjun",
         "email": "e@e.com",
-        "password": "123",
+        "password": "Aa@123",
         "taskCounts": {
             "active": 2,
             "newTask": 1,
@@ -47,7 +47,7 @@ const employees = [
         "id": 2,
         "firstName": "Sneha",
         "email": "e2@e.com",
-        "password": "123",
+        "password": "E2@123",
         "taskCounts": {
             "active": 1,
             "newTask": 0,
@@ -81,7 +81,7 @@ const employees = [
         "id": 3,
         "firstName": "Ravi",
         "email": "e3@e.com",
-        "password": "123",
+        "password": "E3@123",
         "taskCounts": {
             "active": 2,
             "newTask": 1,
@@ -125,7 +125,7 @@ const employees = [
         "id": 4,
         "firstName": "Priya",
         "email": "employee4@example.com",
-        "password": "123",
+        "password": "E4@123",
         "taskCounts": {
             "active": 2,
             "newTask": 1,
@@ -159,7 +159,7 @@ const employees = [
         "id": 5,
         "firstName": "Karan",
         "email": "employee5@example.com",
-        "password": "123",
+        "password": "E5@123",
         "taskCounts": {
             "active": 2,
             "newTask": 1,
@@ -206,7 +206,7 @@ const admin = [{
     "id": 1,
     "firstName":"Nicky Singhal",
     "email": "admin@me.com",
-    "password": "123"
+    "password": "Admin@123"
 }];
 
 export const setLocalStorage = ()=>{
